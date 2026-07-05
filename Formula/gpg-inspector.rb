@@ -6,6 +6,11 @@ class GpgInspector < Formula
   license "MIT"
   head "https://github.com/jhheider/gpg-inspector.git", branch: "main"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on "rust" => :build
 
   def install
