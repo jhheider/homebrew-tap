@@ -1,20 +1,38 @@
 class GpgInspector < Formula
   desc "TUI for parsing and inspecting OpenPGP (GPG) packets per RFC 4880 and RFC 9580"
   homepage "https://github.com/jhheider/gpg-inspector"
-  url "https://github.com/jhheider/gpg-inspector/archive/refs/tags/v0.8.0.tar.gz"
-  sha256 "8f4b3d6ba298843ee2f84e942bbf49ac6d91b9679f865bc689a7a624a78c1c5a"
+  version "0.8.0"
   license "MIT"
-  head "https://github.com/jhheider/gpg-inspector.git", branch: "main"
 
   livecheck do
     url :stable
     strategy :github_latest
   end
 
-  depends_on "rust" => :build
+  on_macos do
+    on_arm do
+      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.0/gpg-inspector-macos-aarch64.tar.gz"
+      sha256 "e667e0c3163462c8c4df7dc0fa02e2efa429c5bdb02776b96ce54a9227d60c3c"
+    end
+    on_intel do
+      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.0/gpg-inspector-macos-x86_64.tar.gz"
+      sha256 "876260caa468d2bdfb0fa9ce03d1e142661c58f87e59e41c7c1d3db3e7577dc0"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.0/gpg-inspector-linux-aarch64.tar.gz"
+      sha256 "e7fc2792cf633411ed6059acfc7e4d1ab885df972f1c08a2a5f0a4dce33ddd52"
+    end
+    on_intel do
+      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.0/gpg-inspector-linux-x86_64.tar.gz"
+      sha256 "718e3534a1ce1bb61b88f33341dff40f2da777886242b991e2622dfedaae2ea1"
+    end
+  end
 
   def install
-    system "cargo", "install", *std_cargo_args(path: "crates/gpg-inspector")
+    bin.install "gpg-inspector"
   end
 
   test do

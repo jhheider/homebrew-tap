@@ -1,20 +1,38 @@
 class Semverator < Formula
   desc "Command-line tool for working with semantic versioning (libpkgx implementation)"
   homepage "https://github.com/jhheider/semverator"
-  url "https://github.com/jhheider/semverator/archive/refs/tags/v0.10.1.tar.gz"
-  sha256 "1e78ebc3b6377e5e3578df840e539ed97f0ee6f9c9ceeb2addeea0f17b0b8167"
+  version "0.10.1"
   license "Apache-2.0"
-  head "https://github.com/jhheider/semverator.git", branch: "main"
 
   livecheck do
     url :stable
     strategy :github_latest
   end
 
-  depends_on "rust" => :build
+  on_macos do
+    on_arm do
+      url "https://github.com/jhheider/semverator/releases/download/v0.10.1/semverator-macos-aarch64.tar.gz"
+      sha256 "257000ebc7f30c347a2b9f2faea01538edc1ee5bd14aa23d183f6b3b9408891e"
+    end
+    on_intel do
+      url "https://github.com/jhheider/semverator/releases/download/v0.10.1/semverator-macos-x86_64.tar.gz"
+      sha256 "ead760503c127b35a2c54a6c06fa1691c57829a02631170cb5db32d9b67dc958"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/jhheider/semverator/releases/download/v0.10.1/semverator-linux-aarch64.tar.gz"
+      sha256 "f5bfab63cebe734d054ee6ca1ff9fa9ddb2a4d6f52e8e82f3f5eb29264906321"
+    end
+    on_intel do
+      url "https://github.com/jhheider/semverator/releases/download/v0.10.1/semverator-linux-x86_64.tar.gz"
+      sha256 "3997beeb8c26078d82d3f8488efb0306404436df6a4b86b74768c3ccb8a90d74"
+    end
+  end
 
   def install
-    system "cargo", "install", *std_cargo_args(path: "cli")
+    bin.install "semverator"
   end
 
   test do
