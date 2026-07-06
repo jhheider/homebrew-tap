@@ -12,22 +12,22 @@ class Edikt < Formula
   on_macos do
     on_arm do
       url "https://github.com/jhheider/edikt/releases/download/v0.2.1/edikt-macos-aarch64.tar.gz"
-      sha256 "fff3881bc5e68d58c1f3b1361765129cd419708ebf2f1bec0a84a88f34a2f51e"
+      sha256 "fbafb5d20734ceebd5b289702acb624fb50d36c4d6bfbf7cea92e542aa186222"
     end
     on_intel do
       url "https://github.com/jhheider/edikt/releases/download/v0.2.1/edikt-macos-x86_64.tar.gz"
-      sha256 "c2c6a8c582ab37af449da9fbda596ba01dc41d3343e755066d701ee1b6b3f1d4"
+      sha256 "05c5da8783f728fd75c0ad95d2c583d342001b83bc7b40a1cf0d0d81210922da"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/jhheider/edikt/releases/download/v0.2.1/edikt-linux-aarch64.tar.gz"
-      sha256 "bb72923aa974d07bb577e410cba6fce68e56b56e50fad6bf85767bf6ac85b342"
+      sha256 "6f69881118b2ab1ea17271442d227074a53c9cd14d9b9d63ac7584d03c9d0aa9"
     end
     on_intel do
       url "https://github.com/jhheider/edikt/releases/download/v0.2.1/edikt-linux-x86_64.tar.gz"
-      sha256 "e98bcad88f62dc6b491ff15d6ebbf27fc61d8b4b68c59c9937300dde97ceec51"
+      sha256 "ea909bec066590f2fe686527f25f140f9629ad9b40441769796ef0c88933bc5e"
     end
   end
 
