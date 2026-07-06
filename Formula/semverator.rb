@@ -45,8 +45,9 @@ class Semverator < Formula
     assert_match "1.2.3 is greater than 1.2.2", shell_output("#{bin}/semverator gt 1.2.3 1.2.2")
     assert_match "1.2.3 is less than 1.2.4", shell_output("#{bin}/semverator lt 1.2.3 1.2.4")
 
-    # Invalid input and false comparisons exit non-zero.
-    shell_output("#{bin}/semverator validate 1.2.three", 1)
+    # An unparseable version is rejected at the CLI boundary (exit 2); false
+    # comparisons of valid versions exit 1.
+    shell_output("#{bin}/semverator validate 1.2.three", 2)
     shell_output("#{bin}/semverator eq 1.2.3 1.2.4", 1)
     shell_output("#{bin}/semverator gt 1.2.3 1.2.4", 1)
     shell_output("#{bin}/semverator lt 1.2.3 1.2.2", 1)
