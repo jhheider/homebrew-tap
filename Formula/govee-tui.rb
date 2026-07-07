@@ -21,7 +21,11 @@ class GoveeTui < Formula
   end
 
   on_linux do
-    # govee-tui ships a static musl x86_64 build; no linux-aarch64 binary yet.
+    # Static musl builds (x86_64 + aarch64).
+    on_arm do
+      url "https://github.com/jhheider/govee-tui/releases/download/v0.1.0/govee-tui-linux-aarch64.tar.gz"
+      sha256 "d062ddbed570f6d1c8cfd8df4436906afeefb46e4c3dfda0060e460fa9aad49c"
+    end
     on_intel do
       url "https://github.com/jhheider/govee-tui/releases/download/v0.1.0/govee-tui-linux-x86_64.tar.gz"
       sha256 "7a39e4f639e57f40b764a60e6c992beddaf50323de56440cbc0111df71e23004"
