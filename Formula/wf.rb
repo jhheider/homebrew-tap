@@ -12,22 +12,22 @@ class Wf < Formula
   on_macos do
     on_arm do
       url "https://github.com/jhheider/wayfinder/releases/download/v0.1.0/wf-macos-aarch64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "e7f236f2898f02dc30bd7ded478ed9b124c4bd6770afe0da0b5d240f0eb1a4b4"
     end
     on_intel do
       url "https://github.com/jhheider/wayfinder/releases/download/v0.1.0/wf-macos-x86_64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "739cc8afb3b5339d82e72b70ca652d5d6b252cf420a92519536b8a19f55ce6d8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/jhheider/wayfinder/releases/download/v0.1.0/wf-linux-aarch64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "902271561e3ce3bfca41294e8f82dd6e2817eb3d49a48a5276bfe1dc1c7405a3"
     end
     on_intel do
       url "https://github.com/jhheider/wayfinder/releases/download/v0.1.0/wf-linux-x86_64.tar.gz"
-      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+      sha256 "c935fd8839df9e7d336391b45008f0a5d5927a2b393eba01b38769f2656e2880"
     end
   end
 
