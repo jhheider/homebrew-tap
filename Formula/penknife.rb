@@ -1,7 +1,7 @@
 class Penknife < Formula
   desc "Terminal app for markdown writing: browse, share as rich text, sync to gists"
   homepage "https://github.com/jhheider/penknife"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   livecheck do
@@ -13,23 +13,23 @@ class Penknife < Formula
   # recomputes them from the real assets when a version is published.
   on_macos do
     on_arm do
-      url "https://github.com/jhheider/penknife/releases/download/v0.2.1/penknife-macos-aarch64.tar.gz"
-      sha256 "c7981a77d8fff482246e9e72af1d5ed6a430265cf3f88f715bf416d35d8c76d9"
+      url "https://github.com/jhheider/penknife/releases/download/v0.2.2/penknife-macos-aarch64.tar.gz"
+      sha256 "d87efadd9a937039e6a5e6e1b6ed743d9e3ad8bd29c5867cc02883e11b74ec84"
     end
     on_intel do
-      url "https://github.com/jhheider/penknife/releases/download/v0.2.1/penknife-macos-x86_64.tar.gz"
-      sha256 "ea98940182bb96c57ecf3c7dd9551f445da2c572dee7dafe41133d6528924fac"
+      url "https://github.com/jhheider/penknife/releases/download/v0.2.2/penknife-macos-x86_64.tar.gz"
+      sha256 "fd6cfaad7ded3d23bbc3e36a3af27b103bf5846d36b3594a66aee1ea9fd9a19d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jhheider/penknife/releases/download/v0.2.1/penknife-linux-aarch64.tar.gz"
-      sha256 "c4f26ac90f6a791165322698ff996f0d2b428fa14b5650fe370a5ba8699ff532"
+      url "https://github.com/jhheider/penknife/releases/download/v0.2.2/penknife-linux-aarch64.tar.gz"
+      sha256 "eb6882a41c304c970fd8f37366b7f4f119a3dce71b456265e521e2a7486d9b4b"
     end
     on_intel do
-      url "https://github.com/jhheider/penknife/releases/download/v0.2.1/penknife-linux-x86_64.tar.gz"
-      sha256 "5de4e17eaebf9411da8ed4e785d8396dfa0ede943c75774cc319f0ec23737386"
+      url "https://github.com/jhheider/penknife/releases/download/v0.2.2/penknife-linux-x86_64.tar.gz"
+      sha256 "b8c3d73b7c8da8d1f6d8d99f5d8016c5bef01b981645addb449c0470f9a4d09d"
     end
   end
 
