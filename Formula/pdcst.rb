@@ -1,7 +1,7 @@
 class Pdcst < Formula
   desc "Fast, keyboard-driven terminal podcast player with an auto-managed queue"
   homepage "https://github.com/jhheider/pdcst"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   livecheck do
@@ -11,12 +11,12 @@ class Pdcst < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jhheider/pdcst/releases/download/v0.3.1/pdcst-macos-aarch64.tar.gz"
-      sha256 "a18d10b3c6c19769032fe11e9d6470e0ae55831d5d7d461ec4c5cd530874ff1d"
+      url "https://github.com/jhheider/pdcst/releases/download/v0.3.2/pdcst-macos-aarch64.tar.gz"
+      sha256 "e20dab46279fe4014c88957ab9203300272374a099f8424e7d4fa0ff1a93320b"
     end
     on_intel do
-      url "https://github.com/jhheider/pdcst/releases/download/v0.3.1/pdcst-macos-x86_64.tar.gz"
-      sha256 "597d9d3cc013dc0777e80324c32644de8637cfc3e16797403f8ed1c513ca7ede"
+      url "https://github.com/jhheider/pdcst/releases/download/v0.3.2/pdcst-macos-x86_64.tar.gz"
+      sha256 "61f08350def7015d84bb4d0b83278a6ae5fee6ecb556de51f36e18d711d8088e"
     end
   end
 
@@ -25,8 +25,8 @@ class Pdcst < Formula
     depends_on "alsa-lib"
 
     on_intel do
-      url "https://github.com/jhheider/pdcst/releases/download/v0.3.1/pdcst-linux-x86_64.tar.gz"
-      sha256 "05f7dfc1d99f4bb900a6caa3f31f3f1cfc3ea85e4a95b83529a5b9e7d9b0b6c5"
+      url "https://github.com/jhheider/pdcst/releases/download/v0.3.2/pdcst-linux-x86_64.tar.gz"
+      sha256 "40e081451c0a40d79e501f39aa3021e60be8a09019922760d1fd61a0b14019f7"
     end
   end
 
