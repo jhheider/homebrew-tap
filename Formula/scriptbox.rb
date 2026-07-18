@@ -1,7 +1,7 @@
 class Scriptbox < Formula
   desc "Run a shell script from an immutable copy, so a mid-run edit can't change it"
   homepage "https://github.com/jhheider/scriptbox"
-  version "0.2.0"
+  version "0.1.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   livecheck do
@@ -40,8 +40,11 @@ class Scriptbox < Formula
     assert_match version.to_s, shell_output("#{bin}/scriptbox --version")
 
     # Args pass through to the real interpreter.
-    (testpath/"t.sh").write "#!/bin/bash\necho \"hello from $1\"\n"
-    assert_equal "hello from world\n",
+    (testpath/"t.sh").write "#!/bin/bash
+echo \"hello from $1\"
+"
+    assert_equal "hello from world
+",
                  shell_output("#{bin}/scriptbox bash #{testpath}/t.sh world")
 
     # `hash` emits a sha256 pin.
