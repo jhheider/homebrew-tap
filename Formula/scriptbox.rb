@@ -1,7 +1,7 @@
 class Scriptbox < Formula
   desc "Run a shell script from an immutable copy, so a mid-run edit can't change it"
   homepage "https://github.com/jhheider/scriptbox"
-  version "0.1.0"
+  version "0.2.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   livecheck do
@@ -11,23 +11,23 @@ class Scriptbox < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jhheider/scriptbox/releases/download/v0.1.0/scriptbox-macos-aarch64.tar.gz"
-      sha256 "1258c0881ced4430b7acacc6dbd70818569abcf732c2c8816ac614b810940d4f"
+      url "https://github.com/jhheider/scriptbox/releases/download/v0.2.0/scriptbox-macos-aarch64.tar.gz"
+      sha256 "240528908a20aab338c159c8620b135a7edd0742c67c80958643ce239fc7c57a"
     end
     on_intel do
-      url "https://github.com/jhheider/scriptbox/releases/download/v0.1.0/scriptbox-macos-x86_64.tar.gz"
-      sha256 "d412f7298485ec9e2e250a777906af95e4cf406ce11e64a71de8cda61db6cebd"
+      url "https://github.com/jhheider/scriptbox/releases/download/v0.2.0/scriptbox-macos-x86_64.tar.gz"
+      sha256 "94527c84e38342a6808c00826deab658dd57b43e79b7bab7012628766b0b48c3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jhheider/scriptbox/releases/download/v0.1.0/scriptbox-linux-aarch64.tar.gz"
-      sha256 "b054ecdb0f69113130503dfcce99690fd3dc51dfbb90e8195cd92aae9788d989"
+      url "https://github.com/jhheider/scriptbox/releases/download/v0.2.0/scriptbox-linux-aarch64.tar.gz"
+      sha256 "c2695a1758740f253f36dd1b5a02ade1b57ad055166fe9607253acd54ba503b2"
     end
     on_intel do
-      url "https://github.com/jhheider/scriptbox/releases/download/v0.1.0/scriptbox-linux-x86_64.tar.gz"
-      sha256 "9f617d83157d2ca253b9de54eb163fd12a39fe19b632ab80e8d994496856ab29"
+      url "https://github.com/jhheider/scriptbox/releases/download/v0.2.0/scriptbox-linux-x86_64.tar.gz"
+      sha256 "ed078b00549289fd3c63d657b817b6be286ee117eac0a254c374b7545bd524d1"
     end
   end
 
