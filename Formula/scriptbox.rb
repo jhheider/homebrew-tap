@@ -1,7 +1,7 @@
 class Scriptbox < Formula
   desc "Run a shell script from an immutable copy, so a mid-run edit can't change it"
   homepage "https://github.com/jhheider/scriptbox"
-  version "0.1.0"
+  version "0.2.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   livecheck do
