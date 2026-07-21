@@ -1,7 +1,7 @@
 class Mdtask < Formula
   desc "Embeddable, execution-capable markdown task runner (heading = task, fence = script)"
   homepage "https://github.com/jhheider/mdtask"
-  version "0.1.1"
+  version "0.2.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   livecheck do
@@ -11,23 +11,23 @@ class Mdtask < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jhheider/mdtask/releases/download/v0.1.1/mdtask-macos-aarch64.tar.gz"
-      sha256 "bf55a7afaf226968fd4114097b69fe6cd65264a491cbd2757fb092645dac5b5a"
+      url "https://github.com/jhheider/mdtask/releases/download/v0.2.0/mdtask-macos-aarch64.tar.gz"
+      sha256 "591bd1ff3a0788c9b2376f14c3e6d0689f2c8eb570b0ff63abd7aaf31b8b3083"
     end
     on_intel do
-      url "https://github.com/jhheider/mdtask/releases/download/v0.1.1/mdtask-macos-x86_64.tar.gz"
-      sha256 "7fc24791174aa1b07a095ac1dfd4a2d7da7401e721fc5c031d7c6c8acb5c74ab"
+      url "https://github.com/jhheider/mdtask/releases/download/v0.2.0/mdtask-macos-x86_64.tar.gz"
+      sha256 "9f6933de8b5019ac5555d83d77eeb5a5fbac29e996b560b37ca6cd3a73530d80"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jhheider/mdtask/releases/download/v0.1.1/mdtask-linux-aarch64.tar.gz"
-      sha256 "cf5b56a16f7ce2e1fae4f6f341b62d2b4e35927bad330b1d2a20768d8b00bd3d"
+      url "https://github.com/jhheider/mdtask/releases/download/v0.2.0/mdtask-linux-aarch64.tar.gz"
+      sha256 "e07c032bcafd44879f53758e97b81c6db393eccbddca9ff6c4fb7da324b31d46"
     end
     on_intel do
-      url "https://github.com/jhheider/mdtask/releases/download/v0.1.1/mdtask-linux-x86_64.tar.gz"
-      sha256 "d9b6ef9b15a825872cf54bd302b15dcc02b52085070a01db7a7b7d8bb44b9a84"
+      url "https://github.com/jhheider/mdtask/releases/download/v0.2.0/mdtask-linux-x86_64.tar.gz"
+      sha256 "00d08c922dfebc06d4eb1068fe8bd5523b6dc1b144ee46f0ad12cb83e2ba839a"
     end
   end
 
