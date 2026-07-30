@@ -1,7 +1,7 @@
 class WayfinderMcp < Formula
   desc "MCP server exposing Archives of Nethys PF2e / SF2e data to LLM tools"
   homepage "https://github.com/jhheider/wayfinder"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   livecheck do
@@ -11,23 +11,23 @@ class WayfinderMcp < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jhheider/wayfinder/releases/download/v0.1.0/wayfinder-mcp-macos-aarch64.tar.gz"
-      sha256 "391e4dbbe7a0cb56813138012b3835805593a5ba97c20c96e22d47918d957960"
+      url "https://github.com/jhheider/wayfinder/releases/download/v0.1.1/wayfinder-mcp-macos-aarch64.tar.gz"
+      sha256 "b02c06926a419d006a125c9c00c3e14f701f3c13c917d966f8b7cb8abbc83d45"
     end
     on_intel do
-      url "https://github.com/jhheider/wayfinder/releases/download/v0.1.0/wayfinder-mcp-macos-x86_64.tar.gz"
-      sha256 "aa67c1867f74e208562fd1ecb8d8ab9c377fb7cbc9747c4c13974bfe57e5f6c3"
+      url "https://github.com/jhheider/wayfinder/releases/download/v0.1.1/wayfinder-mcp-macos-x86_64.tar.gz"
+      sha256 "3450dcf0fec94ca3df214af17828bd96dba1b6b3061f8970e5897923944441d3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jhheider/wayfinder/releases/download/v0.1.0/wayfinder-mcp-linux-aarch64.tar.gz"
-      sha256 "e27f643efa6a23ff4a06b6e746659b7772c96c7513020a85422c3d6d68f6bb74"
+      url "https://github.com/jhheider/wayfinder/releases/download/v0.1.1/wayfinder-mcp-linux-aarch64.tar.gz"
+      sha256 "47071a179ad4335fb1a2369dbf1f6e3e417aa15503071f93389e00ca7f328cda"
     end
     on_intel do
-      url "https://github.com/jhheider/wayfinder/releases/download/v0.1.0/wayfinder-mcp-linux-x86_64.tar.gz"
-      sha256 "0040536d5c3568591f401cc10b6451e845bef845f60288757412a0dafdf400be"
+      url "https://github.com/jhheider/wayfinder/releases/download/v0.1.1/wayfinder-mcp-linux-x86_64.tar.gz"
+      sha256 "045e855a43c5318dabbff0effec78fc92ddcf40f8c1f15da9dcdb1c2312f78c9"
     end
   end
 
