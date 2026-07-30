@@ -1,7 +1,7 @@
 class GpgInspector < Formula
   desc "TUI for parsing and inspecting OpenPGP (GPG) packets per RFC 4880 and RFC 9580"
   homepage "https://github.com/jhheider/gpg-inspector"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   livecheck do
@@ -11,23 +11,23 @@ class GpgInspector < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.0/gpg-inspector-macos-aarch64.tar.gz"
-      sha256 "e667e0c3163462c8c4df7dc0fa02e2efa429c5bdb02776b96ce54a9227d60c3c"
+      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.1/gpg-inspector-macos-aarch64.tar.gz"
+      sha256 "b10f3cc7347cd27a2942baf2bdd8767c2dbae918e3326e1418224e98a6d6479e"
     end
     on_intel do
-      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.0/gpg-inspector-macos-x86_64.tar.gz"
-      sha256 "876260caa468d2bdfb0fa9ce03d1e142661c58f87e59e41c7c1d3db3e7577dc0"
+      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.1/gpg-inspector-macos-x86_64.tar.gz"
+      sha256 "d9483bc6039dfef8a64c0006ecee2b279da7a7dba8ff8b1d0e3dfd6ba1987bee"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.0/gpg-inspector-linux-aarch64.tar.gz"
-      sha256 "e7fc2792cf633411ed6059acfc7e4d1ab885df972f1c08a2a5f0a4dce33ddd52"
+      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.1/gpg-inspector-linux-aarch64.tar.gz"
+      sha256 "020ccc5d620f72d172445303fe54003b66d4ade5c03342e6bcb6af152f30c03e"
     end
     on_intel do
-      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.0/gpg-inspector-linux-x86_64.tar.gz"
-      sha256 "718e3534a1ce1bb61b88f33341dff40f2da777886242b991e2622dfedaae2ea1"
+      url "https://github.com/jhheider/gpg-inspector/releases/download/v0.8.1/gpg-inspector-linux-x86_64.tar.gz"
+      sha256 "8e28c42f0a9338ccec1c8a1979398447e3313a8f5090ec985c587c802a938fcc"
     end
   end
 
