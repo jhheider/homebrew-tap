@@ -12,22 +12,22 @@ class Semverator < Formula
   on_macos do
     on_arm do
       url "https://github.com/jhheider/semverator/releases/download/v0.11.0/semverator-macos-aarch64.tar.gz"
-      sha256 "efa9a9a62b5c2bc41d4f73ca6fcb291372ff7400b8984d2189caf1cc05da5ccd"
+      sha256 "c4c299b9976f0c453b53656c9cb01803a6d713e81766216cd025c13e51c0c9aa"
     end
     on_intel do
       url "https://github.com/jhheider/semverator/releases/download/v0.11.0/semverator-macos-x86_64.tar.gz"
-      sha256 "6bf04a42ccf66b01575dd51b8e79a9dbce9084cfc3b79b0ffaf7c0eb183a6acf"
+      sha256 "eb5c06d70ab10606617c2d91b8ac6bff8c78e79c96bee3fb3ffb95d5330b4c2d"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/jhheider/semverator/releases/download/v0.11.0/semverator-linux-aarch64.tar.gz"
-      sha256 "fd703b790eba8d0f4c4d52ed85c99c4c734959e3f095fdbb43173b76e9b30174"
+      sha256 "f098f1954ad34bd3529e6605074e4377d0e1f84e24d1000eb14d6c33da8e2c0c"
     end
     on_intel do
       url "https://github.com/jhheider/semverator/releases/download/v0.11.0/semverator-linux-x86_64.tar.gz"
-      sha256 "74f1bed598b5410738584f32034241b748d805984e59511bcf47afa3e1a2e966"
+      sha256 "d65a326723e50757955b870d2033d72bdef12a0998e821fcb06c88e46e73cda8"
     end
   end
 
