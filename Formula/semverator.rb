@@ -1,7 +1,7 @@
 class Semverator < Formula
   desc "Command-line tool for working with semantic versioning (libpkgx implementation)"
   homepage "https://github.com/jhheider/semverator"
-  version "0.10.2"
+  version "0.11.0"
   license "Apache-2.0"
 
   livecheck do
@@ -11,23 +11,23 @@ class Semverator < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jhheider/semverator/releases/download/v0.10.2/semverator-macos-aarch64.tar.gz"
-      sha256 "e05d20af71891494672d4a5f06602e8e14e50464e38a326323c79fd7ab467b3f"
+      url "https://github.com/jhheider/semverator/releases/download/v0.11.0/semverator-macos-aarch64.tar.gz"
+      sha256 "efa9a9a62b5c2bc41d4f73ca6fcb291372ff7400b8984d2189caf1cc05da5ccd"
     end
     on_intel do
-      url "https://github.com/jhheider/semverator/releases/download/v0.10.2/semverator-macos-x86_64.tar.gz"
-      sha256 "104103220bc79e6b6470bb522bb158e9251f6b3756d2b8c9c371e1ba2ea9d2cb"
+      url "https://github.com/jhheider/semverator/releases/download/v0.11.0/semverator-macos-x86_64.tar.gz"
+      sha256 "6bf04a42ccf66b01575dd51b8e79a9dbce9084cfc3b79b0ffaf7c0eb183a6acf"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jhheider/semverator/releases/download/v0.10.2/semverator-linux-aarch64.tar.gz"
-      sha256 "b966e68591bd27fec1b7156e62c5c17faba742579eddc2e6ded58879d6bc91bb"
+      url "https://github.com/jhheider/semverator/releases/download/v0.11.0/semverator-linux-aarch64.tar.gz"
+      sha256 "fd703b790eba8d0f4c4d52ed85c99c4c734959e3f095fdbb43173b76e9b30174"
     end
     on_intel do
-      url "https://github.com/jhheider/semverator/releases/download/v0.10.2/semverator-linux-x86_64.tar.gz"
-      sha256 "4f0347bc03c02c572cc74deee4a14a644141445b0071f6d2965807519c49094e"
+      url "https://github.com/jhheider/semverator/releases/download/v0.11.0/semverator-linux-x86_64.tar.gz"
+      sha256 "74f1bed598b5410738584f32034241b748d805984e59511bcf47afa3e1a2e966"
     end
   end
 
