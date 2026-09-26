@@ -1,7 +1,7 @@
 class Wf < Formula
   desc "Search and browse Pathfinder 2e / Starfinder 2e data from Archives of Nethys"
   homepage "https://github.com/jhheider/wayfinder"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   livecheck do
@@ -11,23 +11,23 @@ class Wf < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jhheider/wayfinder/releases/download/v0.2.0/wf-macos-aarch64.tar.gz"
-      sha256 "714d85b0157dc69f2f5405bd7de7a894a3059d71d9509bafbc54b0255c09dce7"
+      url "https://github.com/jhheider/wayfinder/releases/download/v0.2.1/wf-macos-aarch64.tar.gz"
+      sha256 "12412175179c659a9f5dcd3bb2f8540279185732bf0760036d2df4de35a9c667"
     end
     on_intel do
-      url "https://github.com/jhheider/wayfinder/releases/download/v0.2.0/wf-macos-x86_64.tar.gz"
-      sha256 "54a444e1a2fd0843d6c07f72b69cd5c6b7ca3fcbf212355e631374854067b577"
+      url "https://github.com/jhheider/wayfinder/releases/download/v0.2.1/wf-macos-x86_64.tar.gz"
+      sha256 "4d353bd648bf576b72bf340e083f41468d6b5a55e1626262fbc98c01b2b3a754"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jhheider/wayfinder/releases/download/v0.2.0/wf-linux-aarch64.tar.gz"
-      sha256 "adfe530d13381248209e034a915a2c5c28d28b6c6b883ee00fa7db9abda644f2"
+      url "https://github.com/jhheider/wayfinder/releases/download/v0.2.1/wf-linux-aarch64.tar.gz"
+      sha256 "c5934df0ba429a404768758c887a953d8d10dff7639c67a5d6768d82fd352752"
     end
     on_intel do
-      url "https://github.com/jhheider/wayfinder/releases/download/v0.2.0/wf-linux-x86_64.tar.gz"
-      sha256 "315637b8e80eed10fea35802b4e8adc4d9617e0a6d9e2780629955b4dc2dc383"
+      url "https://github.com/jhheider/wayfinder/releases/download/v0.2.1/wf-linux-x86_64.tar.gz"
+      sha256 "2955f06c0807a1fa9685819420e79b19f3bd25f6e889e36be6c54379e8cd7038"
     end
   end
 
