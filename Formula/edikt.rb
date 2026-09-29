@@ -1,7 +1,7 @@
 class Edikt < Formula
   desc "Lossless, format-preserving editor for JSONC, TOML, YAML, KDL, INI, and .env"
   homepage "https://github.com/jhheider/edikt"
-  version "0.8.0"
+  version "0.8.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   livecheck do
@@ -11,23 +11,23 @@ class Edikt < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jhheider/edikt/releases/download/v0.8.0/edikt-macos-aarch64.tar.gz"
-      sha256 "00712bb3ee99edac842c22eb22d80c2ab61518e94047913e5300b5a5975a2b34"
+      url "https://github.com/jhheider/edikt/releases/download/v0.8.1/edikt-macos-aarch64.tar.gz"
+      sha256 "098312bdf6897d3741f681d1f44fcb775aa02428b1e357276f69e26a77e07ea6"
     end
     on_intel do
-      url "https://github.com/jhheider/edikt/releases/download/v0.8.0/edikt-macos-x86_64.tar.gz"
-      sha256 "c38318fed91381827bc91842c45dd656d780b889981f881f556c14efd11122c5"
+      url "https://github.com/jhheider/edikt/releases/download/v0.8.1/edikt-macos-x86_64.tar.gz"
+      sha256 "1c536a83fdb338da148ff366d752affc3268ee206ab3a68ca2d7cd75d1c90710"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jhheider/edikt/releases/download/v0.8.0/edikt-linux-aarch64.tar.gz"
-      sha256 "26c0c778ac56af77e77b60be69ca681d10cbe4874b9f9a9db0e85b7d7241c106"
+      url "https://github.com/jhheider/edikt/releases/download/v0.8.1/edikt-linux-aarch64.tar.gz"
+      sha256 "0d1194bda0b91a17fe992d015b26eddf80352213e8312cdae4a46e263dfc6986"
     end
     on_intel do
-      url "https://github.com/jhheider/edikt/releases/download/v0.8.0/edikt-linux-x86_64.tar.gz"
-      sha256 "c69770b3c358e11cd6459ae07bfc1a271f1f58e2c3002975649d04f36232a8b5"
+      url "https://github.com/jhheider/edikt/releases/download/v0.8.1/edikt-linux-x86_64.tar.gz"
+      sha256 "c9609b32596c47443c0849b8215a75c7c5e8e8c0ad707b009a8dd24fcbd88602"
     end
   end
 
